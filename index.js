@@ -1,27 +1,47 @@
-function shout(string){
-    return string.toUpperCase();
+// function shout(string){
+//     return string.toUpperCase();
+// }
+
+// function whisper(string){
+//     return string.toLowerCase();
+// }
+
+// function logShout(string){
+//     console.log(string)
+// }
+// logShout("HELLO")
+
+// function logTwoValues(value1, value2) {
+//   console.log(`The two values are ${value1} and ${value2}.`);
+// }
+
+// function introductionWithLanguage (name,language){
+//     return `Hi, my name is ${name} and I am learning to program in ${language}.`
+// }
+// function sayHelloTo(firstName = "User") {
+//   console.log(`Hello, ${firstName}!`);
+// }
+
+// function introductionWithLanguage (name,language="javascript"){
+//     return `Hi, my name is ${name} and I am learning to program in ${language}.`
+// }
+number = 10;
+
+function add5() {
+  return (number += 5);
 }
 
-function whisper(string){
-    return string.toLowerCase();
+function divideBy3() {
+  return (number /= 3);
 }
 
-function logShout(string){
-    console.log(string)
-}
-logShout("HELLO")
+divideBy3(); //=> 3.3333333333333335
 
-function logTwoValues(value1, value2) {
-  console.log(`The two values are ${value1} and ${value2}.`);
-}
+add5(); //=> 8.333333333333334
 
-function introductionWithLanguage (name,language){
-    return `Hi, my name is ${name} and I am learning to program in ${language}.`
-}
-function sayHelloTo(firstName = "User") {
-  console.log(`Hello, ${firstName}!`);
-}
+// reset number
+number = 10;
 
-function introductionWithLanguage (name,language="javascript"){
-    return `Hi, my name is ${name} and I am learning to program in ${language}.`
-}
+add5(); //=> 15
+
+divideBy3(); //=> 5
